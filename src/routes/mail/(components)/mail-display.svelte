@@ -216,14 +216,14 @@
 			</div>
 			<Separator class="mt-auto" />
 			<div class="p-4">
-				<form>
+				<form method="POST">
 					<div class="grid gap-4">
-						<Textarea class="p-4" placeholder={`Reply ${mail.name}...`} />
+						<Textarea name="text" class="p-4" placeholder={`Reply ${mail.name}...`} />
 						<div class="flex items-center">
 							<Label for="mute" class="flex items-center gap-2 text-xs font-normal">
 								<Switch id="mute" aria-label="Mute thread" /> Mute this thread
 							</Label>
-							<Button size="sm" class="ml-auto">Send</Button>
+							<Button size="sm" class="ml-auto" type="submit">Send</Button>
 						</div>
 					</div>
 				</form>
